@@ -1,0 +1,25 @@
+.Skills {
+  background-color: #1c1c1c;
+  color: #FFF;
+  padding: 20px;
+}
+
+.Skills ul {
+  columns: 2;
+  margin: auto;
+  margin-top: 35px;
+  list-style: none;
+}
+
+.Skills ul li {
+  padding: 10px;
+  border: 1px solid #FFF;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.Skills .checkCircular {
+  margin-right: 10px;
+}
+
