@@ -1,0 +1,24 @@
+.Footer {
+  display: flex !important;
+  width: 200px !important;
+}
+
+.Footer a {
+  color: unset;
+}
+
+.Footer .codeIcon {
+  font-size: 50px !important;
+}
+
+.FooterContainer{
+  background-color: #FFFF;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.12);
+}
+
+@media only screen and (max-width: 767px){
+  .Footer {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -14,9 +14,10 @@ import { Box } from "@mui/system";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
+import { Link } from "react-scroll";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Inicio", "Información", "Tecnología", "Live", "Contacto"];
 
 export const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -31,10 +32,79 @@ export const NavBar = () => {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        {navItems.map((item, key) => (
+          <ListItem key={key} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              {item === "Inicio" && (
+                <Link
+                  onClick={handleDrawerToggle}
+                  color="#FFF"
+                  to="background"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={800}
+                  className="nav-item"
+                >
+                  {item}
+                </Link>
+              )}
+              {item === "Información" && (
+                <Link
+                  onClick={handleDrawerToggle}
+                  color="#FFF"
+                  to="AboutUs"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={800}
+                  className="nav-item"
+                >
+                  {item}
+                </Link>
+              )}
+              {item === "Tecnología" && (
+                <Link
+                  onClick={handleDrawerToggle}
+                  color="#FFF"
+                  to="Skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={800}
+                  className="nav-item"
+                >
+                  {item}
+                </Link>
+              )}
+              {item === "Live" && (
+                <Link
+                  onClick={handleDrawerToggle}
+                  color="#FFF"
+                  to="Apps"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={800}
+                  className="nav-item"
+                >
+                  {item}
+                </Link>
+              )}
+              {item === "Contacto" && (
+                <Link
+                  onClick={handleDrawerToggle}
+                  color="#FFF"
+                  to="ContactUS"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={800}
+                  className="nav-item"
+                >
+                  {item}
+                </Link>
+              )}
             </ListItemButton>
           </ListItem>
         ))}
@@ -62,11 +132,77 @@ export const NavBar = () => {
             JRD
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
+            <List sx={{ display: "flex" }}>
+              {navItems.map((item, key) => (
+                <ListItem key={key}>
+                  {item === "Inicio" && (
+                    <Link
+                      color="#FFF"
+                      to="background"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={800}
+                      className="navItems"
+                    >
+                      {item}
+                    </Link>
+                  )}
+                  {item === "Información" && (
+                    <Link
+                      color="#FFF"
+                      to="AboutUs"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={800}
+                      className="navItems"
+                    >
+                      {item}
+                    </Link>
+                  )}
+                  {item === "Tecnología" && (
+                    <Link
+                      color="#FFF"
+                      to="Skills"
+                      spy={true}
+                      smooth={true}
+                      offset={-60}
+                      duration={800}
+                      className="navItems"
+                    >
+                      {item}
+                    </Link>
+                  )}
+                  {item === "Live" && (
+                    <Link
+                      color="#FFF"
+                      to="Apps"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={800}
+                      className="navItems"
+                    >
+                      {item}
+                    </Link>
+                  )}
+                  {item === "Contacto" && (
+                    <Link
+                      color="#FFF"
+                      to="ContactUS"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={800}
+                      className="navItems"
+                    >
+                      {item}
+                    </Link>
+                  )}
+                </ListItem>
+              ))}
+            </List>
           </Box>
         </Toolbar>
       </AppBar>

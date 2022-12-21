@@ -19,7 +19,42 @@
   align-items: center;
 }
 
+.Skills-img {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(150px, auto);
+  gap: 1em;
+  padding-bottom: 20px;
+}
+
+.Skills img {
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+
 .Skills .checkCircular {
   margin-right: 10px;
 }
 
+
+.Skills-img .info-2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.Skills-img p {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 979px) {
+  .Skills-img {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Skills img {
+    width: 145px;
+  }
+}

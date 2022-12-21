@@ -256,6 +256,12 @@
   box-shadow: unset !important;
 }
 
+@media only screen and (min-width: 980px) and (max-width: 1299px){
+  .background {
+    height: 600px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .background {
     height: auto;

@@ -1,0 +1,99 @@
+.AboutUs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding: 40px;
+  align-items: center;
+}
+
+.nav-item {
+  display: block;
+  margin: auto;
+}
+
+.navItems {
+  cursor: pointer;
+}
+
+.infoImg {
+  position: relative;
+  left: 30%;
+}
+
+img.people {
+  width: 300px;
+}
+
+.infoImg::before {
+  content: ' ';
+  width: 285px;
+  height: 275px;
+  background: #543884;
+  position: absolute;
+  left: -5%;
+  z-index: -1;
+  top: -26px;
+}
+
+.AboutUs .people {
+  background: red;
+}
+
+.people::before {
+  content: ' ';
+  width: 400px;
+  height: 400px;
+  background: red;
+  position: relative;
+  left: 50%;
+}
+
+.infoEmail a {
+  display: flex;
+  margin-top: 20px;
+  align-self: center;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+}
+
+body::-webkit-scrollbar-thumb-height {
+  height: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .infoImg {
+    left: unset;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .AboutUs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  img.people {
+    width: 190px;
+  }
+
+  .infoImg {
+    left: unset;
+    margin: auto;
+  }
+
+  .infoImg::before {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: -15px;
+  }
+}

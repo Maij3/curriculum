@@ -9,15 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.16",
     "@mui/material": "^5.10.17",
+    "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.5",
+    "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.6.0",
+    "sweetalert2": "^11.6.15",
     "three": "^0.147.0"
   },
   "devDependencies": {

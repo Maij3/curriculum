@@ -1,0 +1,57 @@
+.ContactUs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin-top: 40px;
+}
+
+.ContactUs img {
+  width: 100%;
+  height: 100%;
+}
+
+.ContactUs input {
+  padding: 10px;
+  width: 100%;
+}
+
+.ContactUs textarea{
+  width: 100%;
+  resize: none;
+}
+
+.ContactUs .form-vertical {
+  margin-top: 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+.ContactUs h3 {
+  margin-bottom: 20px;
+}
+.ContactUs .form-info {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0;
+}
+
+.ContactUs label {
+  display: block;
+  margin: auto;
+}
+
+.ContactUs button {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+@media only screen and (max-width: 767px){
+  .ContactUs {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .ContactUs .form-info {
+    margin: auto; 
+  }
+}
