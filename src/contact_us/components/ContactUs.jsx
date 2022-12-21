@@ -64,7 +64,7 @@ export const ContactUs = () => {
             onSubmit={sendEmail}
             data-aos="fade-in"
             data-aos-once="false"
-            data-aos-anchor=".form-vertical"
+            data-aos-anchor=".ContactUs"
           >
             <Box className="form-control">
               <label htmlFor="">Nombre</label>
