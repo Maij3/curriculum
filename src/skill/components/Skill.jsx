@@ -14,6 +14,11 @@ import nest from "../../assets/Skills/nestjs.png";
 import next from "../../assets/Skills/Next.png";
 import php from "../../assets/Skills/php.png";
 import react from "../../assets/Skills/react.png";
+import firebases from "../../assets/Skills/firebase.png";
+import github from "../../assets/Skills/github.png";
+import redux from "../../assets/Skills/redux.png";
+import material from "../../assets/Skills/material.png";
+import docker from "../../assets/Skills/docker.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -69,6 +74,26 @@ export const Skill = () => {
           <div className="info-2" data-aos="fade-in" data-aos-once="false">
             <img src={react} alt="" />
             <Typography>REACT.JS</Typography>
+          </div>
+          <div className="info-2" data-aos="fade-in" data-aos-once="false">
+            <img src={redux} alt="" />
+            <Typography>REDUX</Typography>
+          </div>
+          <div className="info-2" data-aos="fade-in" data-aos-once="false">
+            <img src={material} alt="" />
+            <Typography>MATERIAL UI</Typography>
+          </div>
+            <div className="info-2" data-aos="fade-in" data-aos-once="false">
+            <img src={firebases} alt="" />
+            <Typography>FIREBASE</Typography>
+          </div>
+          <div className="info-2" data-aos="fade-in" data-aos-once="false">
+            <img src={docker} alt="" />
+            <Typography>DOCKER</Typography>
+          </div>
+            <div className="info-2" data-aos="fade-in" data-aos-once="false">
+            <img src={github} alt="" />
+            <Typography>GiTHUB</Typography>
           </div>
         </Box>
       </Container>

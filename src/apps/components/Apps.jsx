@@ -7,7 +7,8 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export const AppsLive = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -34,18 +35,28 @@ export const AppsLive = () => {
             <b>Soy Jaime Rodriguez</b>
           </Typography>
           <Typography style={{ marginTop: "10px" }}>
-            <b>
-              Ingeniero Informático, Web Master, Product Developer, coach y
-              mentor profesional.
-            </b>
+            <b>Ingeniero Informático, Web Master, Product Developer</b>
           </Typography>
           <Typography style={{ marginTop: "10px" }}>
-            Llevo desarrollando productos con tecnología desde el 2010. Cuando
-            finalice mis estudios de Ingeniería Informática las materias que más
+            Llevo desarrollando productos con react desde el 2018. Cuando
+            finalicé mis estudios de Ingeniería Informática las materias que más
             me marcaron por la sencillez de poder crear algo de la nada fueron
-            las asignaturas de programación. Así que busque mi primera
+            Las asignaturas de programación. Así que busque mi primera
             oportunidad en el mundo del desarrollo de páginas web y SEO con
-            Google, desempeñando un rol de liderazgo.
+            Google, desempeñando un rol de desarrollador frontend. Luego
+            desempeñe el rol de Desarrollador de producto. Para este trabajo
+            dispusimos de la libreria react js usando variedad de librerías como
+            react-router para el manejo de rutas públicas y privadas, Material
+            UI para estilos de los componentes, Redux para él manejo de estados,
+            Axios para hacer peticiones a las API, Formik para el manejo de
+            formularios, storybook para llevar un registro de los estilos de Los
+            componetes. Estas aplicaciones consumían diferentes servicios que
+            van desde Firebase que esto incluye FireAuth, FireStore. También se
+            desarrollaron WPA para El uso de aplicaciones móviles. Luego subimos
+            aún más la apuesta y tomamos Next js como framework de React JS para
+            la creación de aplicaciones con Client Side Rendering y Server Side
+            Rendering. Entre las que se pueden destacar Tiendas virtuales y
+            gestores de contenido.
           </Typography>
           <Typography style={{ marginTop: "10px" }}>
             Me encanta codificar y entregar Software de calidad teniendo buenas
@@ -65,10 +76,36 @@ export const AppsLive = () => {
             versatilidad me permite tener diferente tipo de funciones y poder
             adaptar de una manera rápida.
           </Typography>
-          <Box className="infoEmail">
-            <Link href="mailto:jaimerodriguez123456@gmail.com">
+          <Box>
+            <Link
+              display={"flex"}
+              marginTop={4}
+              marginBottom={4}
+              alignItems={"center"}
+              href="mailto:jaimerodriguez123456@gmail.com"
+            >
               <AlternateEmailIcon />
               jaimerodriguez123456@gmail.com
+            </Link>
+            <Link
+              display={"flex"}
+              marginTop={4}
+              marginBottom={4}
+              alignItems={"center"}
+              href="https://github.com/Maij3"
+            >
+              <GitHubIcon />
+              https://github.com/Maij3
+            </Link>
+            <Link
+              display={"flex"}
+              alignItems={"center"}
+              marginTop={4}
+              marginBottom={4}
+              href="https://www.linkedin.com/in/jaime-rodriguez-07944820b/"
+            >
+              <LinkedInIcon />
+              https://www.linkedin.com/in/jaime-rodriguez-07944820b
             </Link>
           </Box>
         </Box>
